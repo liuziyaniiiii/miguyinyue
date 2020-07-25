@@ -1,0 +1,155 @@
+/* pages/index/index.wxss */
+/* .indexContainer{
+  box-sizing: border-box;
+} */
+/*主页轮播图*/
+.navSwiper{
+    width:100%;
+    height: 346rpx;
+}
+.navSwiper image{
+    width:100%;
+    height: 100%;
+}
+/*搜索条*/
+.search{
+    width: 700rpx;
+    height: 70rpx;
+    background: #f8f8f8;
+    border-radius: 10rpx;
+    text-align: center;
+    line-height: 70rpx;
+    margin: 10rpx 20rpx;
+    color: #cccccc;
+}
+.search .iconfont{
+    font-size: 40rpx;
+    margin-right: 10rpx;
+}
+.search text{
+    font-size: 40rpx;
+}
+/*搜索条下面的图标*/
+.musicContainer{
+    display: flex;
+    margin-bottom: 10rpx;
+}
+.musicItem{
+    display: flex;
+    width:20%;
+    flex-direction: column;
+    text-align: center;
+}
+.musicItem .iconfont{
+    font-size: 50rpx;
+    color: #e40077;
+}
+.musicItem text{
+    margin-top: 10rpx;
+    font-size: 26rpx;
+}
+/*推荐歌单*/
+
+/*推荐歌单的内容区*/
+.recommendContent{
+    margin-top: 50rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contentItem{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.contentItem image{
+    display: block;
+    width:240rpx;
+    height: 240rpx;
+}
+.contentItem text{
+    padding: 10rpx;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient: vertical;
+    font-size: 26rpx;
+    margin-top: 10rpx;
+}
+
+/*新歌速递*/
+.newSong{
+    margin-top: 20rpx;
+}
+.newSongSwiper{
+    margin-top: 50rpx;
+    padding: 0 40rpx;
+    height: 470rpx;
+}
+.newSongSwiper .newSongItem .songContent{
+    display: flex;
+    margin-bottom: 20rpx
+}
+.newSongSwiper .newSongItem .songContent .songAuthor{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+    height: 120rpx;
+    margin-top: 30rpx;
+}
+.newSongSwiper .newSongItem .songContent .songAuthor .songName{
+    color: #333333;
+    write-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newSongSwiper .newSongItem .songContent .songAuthor .musicAuthor{
+    color: #cccccc;
+    font-size: 30rpx;
+}
+.newSongSwiper .newSongItem .songContent image{
+    display: block;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 10rpx;
+}
+/* 新碟上架 */
+.newDisc{
+  margin-top: 20rpx;
+}
+.discScroll{
+    display: flex;
+    height: 400rpx;
+}
+.discScroll .discItem{
+    margin: 20rpx 0;
+}
+.discScroll .discItem image{
+    display: block;
+    width: 220rpx;
+    height: 240rpx;
+    margin: 20rpx 20rpx 20rpx 0;
+}
+.discScroll .discItem .discContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rpx;
+}
+.discScroll .discItem .discContent .disc{
+    /*display: block;*/
+    /*write-space:nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.discScroll .discItem .discContent .songer{
+    color: #cccccc;
+    font-size: 30rpx;
+}

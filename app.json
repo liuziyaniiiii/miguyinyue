@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/online/online",
+    "pages/personal/personal",
+    "pages/custorm/custorm"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#e40077",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "咪咕音乐"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#e40077",
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/static/images/tabs/tab-home.png",
+      "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "/static/images/tabs/tab-my.png",
+        "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+      },
+      {
+        "pagePath": "pages/online/online",
+        "text": "在线客服",
+        "iconPath": "/static/images/tabs/select.png",
+        "selectedIconPath": "/static/images/tabs/selected.png"
+      },
+      {
+        "pagePath": "pages/custorm/custorm",
+        "text": "客户端",
+        "iconPath": "/static/images/tabs/center.png",
+        "selectedIconPath": "/static/images/tabs/center-active.png"
+      }
+    ]
+  }
+}

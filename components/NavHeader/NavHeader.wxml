@@ -1,0 +1,4 @@
+<view class="recommendTop">
+    <text class="topLeft">{{title}}</text>
+    <text class="topRight"> > </text>
+</view>

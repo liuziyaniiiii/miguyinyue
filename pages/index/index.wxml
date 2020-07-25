@@ -1,0 +1,83 @@
+<view class="indexContainer">
+<!--主页轮播图-->
+    <swiper class="navSwiper" indicator-dots indicator-color="#fff" indicator-active-color="#e40077" autoplay circular	>
+        <swiper-item wx:for="{{bannerList}}" wx:key="contentId">
+            <image src="{{item.linkData.linkPicUrl}}"></image>
+        </swiper-item>
+    </swiper>
+
+<!--搜索条-->
+    <view class="search">
+        <text class="iconfont icon-sousuo"></text>
+        <text>搜索</text>
+    </view>
+
+<!--搜索条下面的图标-->
+    <view class="musicContainer">
+        <view class="musicItem">
+            <text class="iconfont icon-icon-"></text>
+            <text>歌单</text>
+        </view>
+        <view class="musicItem">
+            <text class="iconfont icon-xianchangzhibo"></text>
+            <text>现场</text>
+        </view>
+        <view class="musicItem">
+            <text class="iconfont icon-bangdan"></text>
+            <text>榜单</text>
+        </view>
+        <view class="musicItem">
+            <text class="iconfont icon-cailing"></text>
+            <text>彩铃</text>
+        </view>
+        <view class="musicItem">
+            <text class="iconfont icon-huiyuan"></text>
+            <text>会员</text>
+        </view>
+    </view>
+
+<!-- 推荐歌单-->
+    <view class="recommend">
+        <!-- 头部自定义组件-->
+        <navTop title="推荐歌单"></navTop>
+
+        <view class="recommendContent">
+            <view class="contentItem" wx:for="{{tuijianList}}" wx:key="playlistId">
+                <image src="{{item.image}}"></image>
+                <text>{{item.playlistName}}</text>
+            </view>
+        </view>
+    </view>
+
+<!-- 新歌速递-->
+    <view class="newSong">
+        <navTop title="新歌速递"></navTop>
+
+        <swiper class="newSongSwiper" next-margin="20rpx">
+            <swiper-item class="newSongItem" wx:for="{{newSongQuestList}}">
+                <view class="songContent">
+                    <image src="/static/images/nvsheng.jpg"></image>
+                    <view class="songAuthor">
+                        <text class="songName">歌名</text>
+                        <text class="musicAuthor">演唱者</text>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+<!-- 新碟上架-->
+    <view class="newDisc">
+        <navTop title="新碟上架"></navTop>
+
+        <scroll-view class="discScroll" enable-flex scroll-x>
+            <view class="discItem" wx:for="{{newDiscData}}" wx:key="contentId">
+                <image src="{{item.albumData.albumsPicUrl}}"></image>
+                <view class="discContent">
+                    <text class="disc">{{item.albumData.relationTitle}}</text>
+                    <text class="songer">彭坦</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+

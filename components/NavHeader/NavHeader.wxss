@@ -1,0 +1,19 @@
+.recommendTop{
+    padding: 20rpx 40rpx;
+}
+.recommendTop .topLeft{
+    float: left;
+    color: #e40077;
+}
+.recommendTop .topRight{
+    float: right;
+    background: #cccccc;
+    width: 54rpx;
+    height: 36rpx;
+    border-radius: 20rpx;
+    text-align: center;
+    line-height: 36rpx;
+    font-size: 40rpx;
+    font-weight: 700;
+    color: #333333;
+}

@@ -6,7 +6,7 @@ export default (url,data={},method='GET')=>{
            data,
            method,
            success:(res)=>{
-               console.log(res.data.data)
+              //  console.log(res.data.data)
                resolve(res.data.data)
            },
            fail:(err)=>{

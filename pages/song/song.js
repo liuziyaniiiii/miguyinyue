@@ -1,28 +1,31 @@
-
+import request from "../../utils/request";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
+    songList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  //  判读本地是否有用户信息
-    let userInfo = wx.getStorageSync('userInfo')
-    if(userInfo){
-      this.setData({
-        userInfo:JSON.parse(userInfo)
-      })
-    }
+  onLoad: async function (options) {
+    // console.log(options)
+    // console.log(JSON.parse(options.song))
+    // console.log(options.playListId)
+    let musicId = options.musicId
+    // console.log(musicId)
+
+    let result = await request('/getSongListData')
+    this.setData({
+      songList:result.contentList
+    })
   },
-  toLogin(){
-    wx.redirectTo({
-      url:'/pages/login/login'
+  toDetail(){
+    wx.navigateTo({
+      url: '/pages/detail/detail',
     })
   },
 

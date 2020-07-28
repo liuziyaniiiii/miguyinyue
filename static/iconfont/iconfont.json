@@ -6,6 +6,118 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5491698",
+      "name": "铃声",
+      "font_class": "lingsheng",
+      "unicode": "e713",
+      "unicode_decimal": 59155
+    },
+    {
+      "icon_id": "6399654",
+      "name": "暂停",
+      "font_class": "weibiaoti--",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "13726563",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "8456612",
+      "name": "播放 (1)",
+      "font_class": "bofang",
+      "unicode": "e730",
+      "unicode_decimal": 59184
+    },
+    {
+      "icon_id": "8615950",
+      "name": "播放",
+      "font_class": "bofang1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11106924",
+      "name": "三 点",
+      "font_class": "sandian",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "8350274",
+      "name": "分享",
+      "font_class": "fenxiang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11757336",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "3409277",
+      "name": "花",
+      "font_class": "hua",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1013070",
+      "name": "听音乐",
+      "font_class": "kefu",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "2571133",
+      "name": "徽章",
+      "font_class": "huizhang",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "5321879",
+      "name": "认证徽章",
+      "font_class": "renzhenghuizhang",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "5651429",
+      "name": "金币",
+      "font_class": "jinbi",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "7288706",
+      "name": "百分比",
+      "font_class": "baifenbi",
+      "unicode": "ecea",
+      "unicode_decimal": 60650
+    },
+    {
+      "icon_id": "7629051",
+      "name": "皇冠",
+      "font_class": "huangguan",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "13173927",
+      "name": "基础彩铃",
+      "font_class": "jichucailing",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
       "icon_id": "2767689",
       "name": "推荐歌单",
       "font_class": "icon-",

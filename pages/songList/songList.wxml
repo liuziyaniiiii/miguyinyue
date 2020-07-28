@@ -1,0 +1,32 @@
+<view class="songListContainer">
+    <!-- 头部 -->
+    <view class="listTop">
+      <view class="topUp">
+        <text class="upItem">经典老歌</text>
+        <text class="upItem">华语</text>
+        <text class="upItem">流行</text>
+        <text class="upItem">民谣</text>
+      </view> 
+      <view class="topDown">
+        <text class="iconfont icon-hua"></text>
+        <text class="all">全部</text>
+      </view>
+    </view>
+
+    <!--精选歌单-->
+    <view class="choiceList">
+        <view class="choiceTop">
+            <text>精选歌单</text>
+        </view>
+        <view class="choiceContent">
+            <view class="choiceItem" data-id="{{item.playListId}}" wx:for="{{choiceList}}" wx:key="playListId" bindtap="toSong">
+                <image src="{{item.image}}"></image>
+                <text class="disc">{{item.playListName}}</text>
+                <text class="author">{{item.createName}}</text>
+            </view>
+        </view>
+    </view>
+
+    <!-- 加载更多 -->
+    <view class="more" bindtap="toMore">加载更多歌单</view>
+</view>

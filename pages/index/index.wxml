@@ -14,7 +14,7 @@
 
 <!--搜索条下面的图标-->
     <view class="musicContainer">
-        <view class="musicItem">
+        <view class="musicItem" bindtap="toSongList">
             <text class="iconfont icon-icon-"></text>
             <text>歌单</text>
         </view>

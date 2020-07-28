@@ -1,31 +1,41 @@
-
+import request from "../../utils/request";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
+    choiceList:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-  //  判读本地是否有用户信息
-    let userInfo = wx.getStorageSync('userInfo')
-    if(userInfo){
-      this.setData({
-        userInfo:JSON.parse(userInfo)
-      })
-    }
-  },
-  toLogin(){
-    wx.redirectTo({
-      url:'/pages/login/login'
+  onLoad: async function (options) {
+    let result = await request('/getChoiceListData')
+    this.setData({
+      choiceList:result.retMsg.playlist
     })
   },
+  // 点击加载更多
+  async toMore(){
+    let second = await request('/getChoiceSecondData')
 
+    this.setData({
+      choiceList:this.data.choiceList.concat(second.retMsg.playlist)
+    })
+  },
+  
+
+  // 跳转到song的页面
+  toSong(event){
+    let {id} = event.currentTarget.dataset
+    // console.log(event)
+    //路由传参query
+    wx.navigateTo({
+      url: '/pages/song/song?musicId='+id,
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

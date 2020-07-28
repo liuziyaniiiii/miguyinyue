@@ -1,2 +1,52 @@
-<!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view class="personalContainer">
+<!--头部-->
+    <view class="topContainer">
+        <image src="/static/images/migu.jpg"></image>
+        <view class="topUp" bindtap="toLogin">
+            <image src="/static/images/logo.jpg"></image>
+            <text class="name">{{userInfo.msisdn ? userInfo.msisdn : '9833333'}}</text>
+        </view>
+        <view class="topDown">
+            <view class="downLeft">
+                <text class="iconfont icon-huizhang">成长体系</text>
+                <text class="text">成长值9</text>
+            </view>
+            <view class="downRight">
+                <text class="iconfont icon-huangguan">白金会员</text>
+                <text class="text">免费不限量下载</text>
+            </view>
+        </view>
+    </view>
+<!--中间-->
+    <view class="middleContainer">
+        <view class="middleItem">
+            <text class="iconfont icon-cailing"></text>
+            <text class="myOwn">我的彩铃</text>
+            <text class="myDisc">随心变化</text>
+        </view>
+        <view class="middleItem">
+            <text class="iconfont icon-baifenbi"></text>
+            <text class="myOwn">咪咕特惠</text>
+            <text class="myDisc">海量优惠</text>
+        </view>
+        <view class="middleItem">
+            <text class="iconfont icon-huiyuan"></text>
+            <text class="myOwn">会员中心</text>
+            <text class="myDisc">联合会员等你体验</text>
+        </view>
+        <view class="middleItem">
+            <text class="iconfont icon-jinbi"></text>
+            <text class="myOwn">咪咕币管理</text>
+            <text class="myDisc">多充多送优惠大</text>
+        </view>
+        <view class="middleItem">
+            <text class="iconfont icon-kefu"></text>
+            <text class="myOwn">客户端</text>
+            <text class="myDisc">放肆听 去玩乐</text>
+        </view>
+    </view>
+
+    <view class="downContainer">
+        <image src="/static/images/dibu.jpg"></image>
+    </view>
+</view>

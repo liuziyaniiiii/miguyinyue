@@ -1,18 +1,30 @@
-// pages/online/online.js
+import request from "../../utils/request";
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    isPlay:false,
+    detailSong:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: async function (options) {
+    let result = await request('/getSingleSongData')
+    this.setData({
+      detailSong:result.data
+    })
+  },
+  musicPlay(){
+    let isPlay = !this.data.isPlay
+    if(isPlay){
+      this.backgroundAudioManager = wx.getBackgroundAudioManager()
+      this.backgroundAudioManager.src = this.data.detailSong.listenUrl
+      this.backgroundAudioManager.title = this.data.detailSong.songName
+    }
   },
 
   /**

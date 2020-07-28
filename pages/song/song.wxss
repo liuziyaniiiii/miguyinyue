@@ -1,0 +1,83 @@
+/* 头部 */
+.songtop{
+  width: 100%;
+  height: 320rpx;
+  background: #87CEEB;
+  display: flex;
+  position: relative
+}
+.songtop image{
+  width:200rpx;
+  height: 200rpx;
+  position: absolute;
+  left: 10%;
+  top:10%
+}
+.songtop .disc{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top:10%;
+}
+.songtop .disc .author{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #333
+}
+.songtop .dark{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top:50%;
+}
+.songtop .dark .icon{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20rpx
+}
+.songtop .dark .icon .iconfont{
+  font-size: 40rpx;
+}
+.songtop .dark .icon .iconText{
+  font-size: 25rpx
+}
+/*内容区*/
+.songItem{
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  position:relative;
+  padding: 30rpx;
+}
+.songItem .itemLeft{
+  display: flex;
+  flex-direction: column;
+}
+.songItem .itemLeft .name{
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  /*display: -webkit-box;*/
+  /*-webkit-line-clamp: 1;*/
+  /*-webkit-box-orient: vertical;*/
+  /*word-break: break-all;*/
+  /*word-wrap: break-word;*/
+  display: block;
+  write-space:nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.songItem .itemRight{
+  position: absolute;
+  right: 10%;
+  top: 30%;
+}
+.songItem .itemRight .iconfont{
+  font-size: 50rpx;
+  color: #ccc
+}
+.songItem .itemRight .icon-sandian{
+  margin-left: 20rpx
+}
+.songItem .itemLeft .singer{
+  color: #cccccc;
+}

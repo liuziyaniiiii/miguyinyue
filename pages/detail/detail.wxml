@@ -1,0 +1,32 @@
+<view class="detailContainer">
+<!--    头部-->
+    <view class="detailTop">
+        <image src="{{detailSong.picL}}"></image>
+    </view>
+<!--中间区域-->
+    <view class="detailMiddle">
+        <text class="name">{{detailSong.songName}}</text>
+        <text class="author">{{detailSong.singerName}}</text>
+    </view>
+
+    <!--进度条区域-->
+    <view class="audioControl">
+        <text>00:00</text>
+        <view class="barControl">
+            <view class="audioItem">
+                <view class="audioCircle">
+
+                </view>
+            </view>
+        </view>
+        <text>03:00</text>
+    </view>
+
+    <!-- 底部控制区域 -->
+  <view class="musicControl">
+    <text class="iconfont icon-lingsheng" ></text>
+    <text class="iconfont {{isPlay?'icon-weibiaoti--': 'icon-bofang'}}" bindtap="musicPlay"></text>
+    <text class="iconfont icon-xiazai"></text>
+  </view>
+
+</view>

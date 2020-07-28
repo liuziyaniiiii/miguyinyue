@@ -1,1 +1,91 @@
-/* pages/personal/personal.wxss */
+/*头部*/
+.topContainer{
+    width: 100%;
+    height: 490rpx;
+    position: relative;
+}
+.topContainer image{
+    width:100%;
+    height: 100%;
+}
+.topContainer .topUp{
+    position: absolute;
+    left:10%;
+    top:20%;
+    width:100%;
+    height: 170rpx;
+    display: flex;
+    color: #806242;
+    font-size: 50rpx;
+}
+.topContainer .topUp image{
+    width:112rpx;
+    height: 112rpx;
+    display: block;
+    border-radius: 50%
+}
+.topContainer .topUp .name{
+  margin-top: 20rpx;
+  margin-left: 30rpx
+}
+.topDown{
+  display: flex;
+  position: absolute;
+  left: 10%;
+  top: 70%;
+  color: #806242;
+}
+.topDown .downLeft{
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  text-align: center;
+}
+.topDown .downLeft .iconfont{
+  font-size: 50rpx;
+}
+.topDown .downRight{
+  display: flex;
+  flex-direction: column;
+  margin-left:150rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.topDown .downRight .iconfont{
+  font-size: 50rpx;
+}
+/*中间*/
+.middleContainer{
+    display: flex;
+    margin-top: 40rpx;
+    padding: 20rpx;
+    flex-wrap: wrap;
+}
+.middleItem{
+    width: 33%;
+    height: 126rpx;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20rpx 0;
+}
+.middleItem .iconfont{
+    color: #806242;
+    font-size: 50rpx;
+}
+.middleItem .myOwn{
+    font-size: 30rpx;
+}
+.middleItem .myDisc{
+    font-size: 30rpx;
+    color: #cccccc;
+}
+/*底部*/
+.downContainer{
+    width:100%;
+    height: 258rpx;
+}
+.downContainer image{
+    width:100%;
+    height: 100%;
+}

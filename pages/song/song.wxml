@@ -1,0 +1,32 @@
+<view class="songContainer">
+    <view class="songtop">
+      <image src="/static/images/nvsheng.jpg"></image>
+      <view class="disc">
+        <text class="story">歌里是你的故事吗?</text>
+        <text class="author">艾丁格</text>
+      </view>
+      <view class="dark">
+            <view class="icon">
+                <text class="iconfont icon-pinglun"></text>
+                <text class="iconText">评论</text>
+            </view>
+            <view class="icon">
+                <text class="iconfont icon-fenxiang"></text>
+                <text class="iconText">分享</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="songContent">
+        <view class="songItem" wx:for="{{songList}}" wx:key="songId">
+            <view class="itemLeft">
+                <text class="name">{{item.contentName}}</text>
+                <text class="singer">{{item.singerName}}</text>
+            </view>
+            <view class="itemRight" bindtap="toDetail">
+                <text class="iconfont icon-bofang1"></text>
+                <text class="iconfont icon-sandian"></text>
+            </view>
+        </view>
+    </view>
+</view>
